@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprofundando no select</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <form action="./pages/other.html" method="GET">
         <select name="order" size="2">
@@ -14,14 +17,62 @@
             <option value="last">Recentes</option>
             <option value="searched">Mais Procurados</option>
         </select>
-        
+
         <input type="submit" value="Submit" />
     </form>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <div>
+        <form method="POST">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>
+                    Nome: <br />
+                    <input type="text" name="name" 
+                    required minlenght="2" maxlength="10">
+                </label>
+                <br>
+
+                <label>
+                    Sobrenome: <br />
+                    <input type="text" name="lastname" required />
+                </label>
+
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <label>
+                    Nome da empresa: <br />
+                    <input type="text" name="company">
+                </label>
+    
+                <br>
+    
+                <label>
+                    Cargo na empresa: <br />
+                    <input type="text" name="job">
+                </label>
+            </fieldset>
+
+            <br>
+            <br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
+
 </html>
 
-<!-- 
+<!-- TAG SELECT:
     Multiple: Pode enviar mais de um item
     size: tamanho
     option: opção a ser selecionada
---> 
+-->
